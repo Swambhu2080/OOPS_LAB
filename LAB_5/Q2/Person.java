@@ -9,8 +9,12 @@ public class Person {
     {
         return name;
     }
+    String getHobby()
+    {
+        return hobby;
+    }
     void Introduce()
     {
-        System.out.println("\nHello, my name is "+getName()+" and my hobby is "+hobby+"\n");
+        System.out.println("\nHello, my name is "+getName()+" and my hobby is "+getHobby()+"\n");
     }
 }
