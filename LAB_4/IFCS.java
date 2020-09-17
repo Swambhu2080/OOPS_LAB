@@ -2,7 +2,6 @@ import java.util.*;
 class IFCS{
 	String[] arr = new String[100];
 	String[] arr1 = new String[100];
-	String[] arr2 = new String[100];
 	int i=0;
 	Scanner sc=new Scanner(System.in);
 	public static void main(String[] args) {
