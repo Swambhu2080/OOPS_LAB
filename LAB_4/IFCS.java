@@ -2,6 +2,7 @@ import java.util.*;
 class IFCS{
 	String[] arr = new String[100];
 	String[] arr1 = new String[100];
+	String[] arr2 = new String[100];
 	int i=0;
 	Scanner sc=new Scanner(System.in);
 	public static void main(String[] args) {
@@ -56,7 +57,24 @@ class IFCS{
 			arr[i]=str;
 			arr1[i]=str1;
 			i++;
+			sort();
 			return true;
+		}
+	}
+	public void sort(){
+		String temp,temp1;
+		for(int j=0;j<i-1;j++){
+			for(int k=j+1;k<i;k++){
+				if(arr[j].compareTo(arr[k]) > 0){
+					temp=arr[j];
+					arr[j]=arr[k];
+					arr[k]=temp;
+
+					temp1=arr1[j];
+					arr1[j]=arr1[k];
+					arr1[k]=temp1;
+				}
+			}
 		}
 	}
 	public boolean exists(){
@@ -80,6 +98,10 @@ class IFCS{
 		return false;
 	}
 	public boolean remove(){
+		if(i==0){
+			System.out.println("Error - Nothing to remove");
+		}
+		else{
 		System.out.print("enter the id : ");
 		String s=sc.nextLine();
 		int f=0,a=0,b=0,z=0;
@@ -105,6 +127,7 @@ class IFCS{
 		}
 		else 
 			System.out.println("item not found");
+		}
 		}
 		return false;	
 	}
