@@ -1,8 +1,11 @@
 public class Student extends Person{
-  	String hobby;
+  	String hobby="Facebook";
     Student(String name)
     {
         super(name);
-        super.hobby="Facebook";
+    }
+      String getHobby()
+    {
+        return hobby;
     }
 }
