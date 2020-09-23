@@ -1,20 +1,17 @@
 public class Person {
     String name;
-   String hobby="Reading";
+    String hobby;
     Person(String name)
     {
         this.name=name;
+        this.hobby="Reading";
     }
     String getName()
     {
-        return name;
-    }
-    String getHobby()
-    {
-        return hobby;
+        return this.name;
     }
     void Introduce()
     {
-        System.out.println("\nHello, my name is "+getName()+" and my hobby is "+getHobby()+"\n");
+        System.out.println("\nHello, my name is "+getName()+" and my hobby is "+this.hobby+"\n");
     }
 }
