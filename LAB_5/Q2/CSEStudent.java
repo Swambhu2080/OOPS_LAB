@@ -1,11 +1,6 @@
-public class CSEStudent extends Student{
-    String hobby="Hacking";
-    CSEStudent(String name)
-    {
+public class CSEStudent extends Student{ 
+     public CSEStudent(String name){
         super(name);
-    }
-      String getHobby()
-    {
-        return hobby;
-    }
+        super.hobby = "hacking";
+    }  
 }
